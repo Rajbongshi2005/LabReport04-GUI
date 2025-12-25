@@ -30,11 +30,4 @@ https://github.com/Rajbongshi2005/LabReport04-GUI.git**
 
 ****
 7. ANALYSIS AND DISCUSSION: 
-This program demonstrates the use of Multithreading in Java, where two threads operate simultaneously. It illustrates the two standard methods of thread creation: one thread is created by extending the Thread class, and the other is created by implementing the Runnable interface.
-The first thread prints numbers from 1 to 10, while the second thread prints the squares of those numbers. A 500-millisecond delay is applied between each output, causing the outputs of both threads to interleave.
-Both threads utilize a shared counter variable. To prevent data inconsistency, the method responsible for updating the counter has been synchronized, ensuring that only one thread can modify the counter at a time.
-In summary, this program clearly explains the importance of multithreading, concurrent execution, and synchronization.
-
-
-
-
+This Java program illustrates the implementation of a simple graphical user interface using Java Swing, emphasizing event handling and custom drawing techniques. The application is developed by extending the JFrame class to create the main window and using a BorderLayout to organize components efficiently. A custom JPanel, named DrawingPanel, is placed at the center to serve as the drawing area, while a control panel containing two buttons—“Draw Circle” and “Clear”—is positioned at the bottom of the frame. Event handling is achieved through the use of the ActionListener interface, enabling the program to respond to user interactions. When the “Draw Circle” button is clicked, a filled circle is drawn at a randomly generated position within the panel, ensuring that the drawing remains inside the visible area. Each circle’s position is stored using a Point object in an ArrayList, allowing multiple circles to be displayed simultaneously without overwriting previous drawings. The “Clear” button removes all stored circle positions and repaints the panel, restoring it to a blank state. Custom rendering is performed by overriding the paintComponent(Graphics g) method, where Graphics2D is used along with anti-aliasing to enhance visual quality. Overall, the program effectively demonstrates fundamental concepts of GUI development, event-driven programming, and custom graphics rendering in Java Swing, fulfilling the objectives of the lab assignment.
